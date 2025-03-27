@@ -5,11 +5,15 @@
   "http.proxyAuthorization": null,
   "http.proxySupport": "fallback",
   "workbench.iconTheme": "catppuccin-perfect-aura",
-  "editor.folding": false,
+  // "editor.folding": false,
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
   "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
+  "editor.acceptSuggestionOnEnter": "smart",
+
+  // поиск в отдельном окне
+  // "workbench.view.experimental.allowMovingToNewContainer": true,
 
   //auto close tags
   "editor.linkedEditing": true,
@@ -21,7 +25,7 @@
   // "workbench.editor.enablePreview": false,
 
   //Apperance
-  "editor.glyphMargin": false,
+  // "editor.glyphMargin": false,
   "editor.scrollbar.horizontal": "hidden",
   // "editor.scrollbar.vertical": "hidden",
   // "window.density.editorTabHeight": "compact",
@@ -103,19 +107,27 @@
     "javascript": "javascriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
+  // "editor.formatOnSaveMode": "file",
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": false,
-  "editor.codeActionsOnSave": {
-    //	"source.organizeImports": "explicit"
+  // "editor.codeActionsOnSave": {
+  //   //	"source.organizeImports": "explicit"
+  // },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
+  "[scala]": {
+    "editor.defaultFormatter": "scalameta.metals"
+  },
 
   //Включите круглые скобки вокруг единственного параметра функции стрелки
   // "prettier.arrowParens": "avoid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
   "editor.inlineSuggest.enabled": true,
 
@@ -140,7 +152,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.quoteStyle": "double",
   "javascript.preferences.quoteStyle": "double",
-  "javascript.format.semicolons": "remove",
+  // "javascript.format.semicolons": "remove",
   "typescript.format.semicolons": "insert",
   // Использование экспериментальных декораторов в JS/TS
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
@@ -192,12 +204,16 @@
   // Скрыть подсказку в пустом редакторе
   "workbench.editor.empty.hint": "hidden",
   "vscodeGoogleTranslate.preferredLanguage": "Russian",
-  "prettier.printWidth": 100,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "prettier.printWidth": 120,
+  "workbench.colorTheme": "Catppuccin Frappé",
   "smartClicks.rules": {},
   "files.watcherExclude": {
     "**/.bloop": true,
     "**/.metals": true,
     "**/.ammonite": true
+  },
+  // "editor.formatOnPaste": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
   }
 }
